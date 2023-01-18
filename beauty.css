@@ -1,0 +1,184 @@
+
+.nav{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+
+}
+.navLinks{
+    width: 500px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: 30px;
+   
+}
+.navLinks a{
+    font-family: sans-serif;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav img{
+    width: 150px;
+    margin-left: 50px;
+}
+#searchForm{
+    margin-left: 50px;
+    border: 1px solid rgb(13, 227, 13);
+}
+#button{
+    padding: 10px 10px;
+    border-radius: 4px 0px 0px 4px;
+   background-color: rgb(243, 240, 240);
+
+}
+.rightCard{
+    border: 1px solid blue;
+    margin-left: 50px;
+    padding: 0px 20px 0px 0px;
+    width: 200px;
+   
+}
+.rightCard a{
+    padding-right: 20px;
+    font-family: sans-serif;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
+#Search{
+    width: 300px;
+    padding: 10px 10px;
+   background-color: rgb(243, 240, 240);
+}
+#personal{
+    font-family: sans-serif;
+}
+.arrow{
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 8px;
+}  
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+} 
+#headPart{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+#headPart h4{
+    margin-left: 30px;
+    font-family: sans-serif;
+}
+.bundleDiv{
+    border: 1px solid blue;
+    margin-left: 170px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+.bundleDiv p{
+    padding-right: 20px;
+}
+#sort{
+    /* border: 1px solid red; */
+    margin-left: 650px;
+    height: 40px;
+}
+#genderFilter{
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    width: 250px;
+    line-height: 25px;
+}
+#genderFilter form input[type="radio"]{
+    padding-left: 30px;
+}
+#categoryFilter{
+    border: 1px solid black;
+    width: 250px;
+    line-height: 25px;
+    border-left: none;
+    border-bottom: none;
+}
+#categoryFilter h5{
+    font-family: sans-serif;
+
+}
+#categoryFilter form{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+#brandFilter{
+    border: 1px solid black;
+    width: 250px;
+    line-height: 25px;
+    border-left: none;
+    border-bottom: none;
+}
+#brandFilter H5{
+    font-family: sans-serif;
+
+}
+#brandFilter form{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+#priceFilter{
+    border: 1px solid black;
+    width: 250px;
+    line-height: 25px;
+    border-left: none;
+    border-bottom: none;
+}
+#priceFilter H5{
+    font-family: sans-serif;
+}
+#priceFilter FORM{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+#colorFilter{
+    border: 1px solid black;
+    width: 250px;
+    line-height: 25px;
+    border-left: none;
+    border-bottom: none;
+}
+#colorFilter H5{
+    font-family: sans-serif;
+}
+#colorFilter FORM{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+#discountFilter{
+    border: 1px solid black;
+    width: 250px;
+    line-height: 25px;
+    border-left: none;
+}
+#discountFilter H5{
+    font-family: sans-serif;
+}
+#discountFilter FORM{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+
