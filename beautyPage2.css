@@ -81,14 +81,6 @@
     margin-left: 30px;
     font-family: sans-serif;
 }
-#personalCare{
-    font-size: small;
-    font-weight: lighter;
-}
-#items-count{
-    font-size: small;
-    font-weight: lighter;
-}
 .bundleDiv{
     /* border: 1px solid blue; */
     margin-left: 170px;
@@ -112,7 +104,7 @@
     line-height: 25px;
 }
 #genderFilter form input[type="radio"]{
-    margin-left: 20px;
+    padding-left: 30px;
 }
 #categoryFilter{
     border: 1px solid gray;
@@ -130,9 +122,6 @@
     font-weight: lighter;
     font-size: small;
 }
-#categoryFilter form input[type="checkbox"]{
-    margin-left: 20px;
-}
 #brandFilter{
     border: 1px solid gray;
     /* width: 250px; */
@@ -149,9 +138,6 @@
     font-weight: lighter;
     font-size: small;
 }
-#brandFilter form input[type="checkbox"]{
-    margin-left: 20px;
-}
 #priceFilter{
     border: 1px solid gray;
     /* width: 250px; */
@@ -166,9 +152,6 @@
     font-family: sans-serif;
     font-weight: lighter;
     font-size: small;
-}
-#priceFilter form input[type="checkbox"]{
-    margin-left: 20px;
 }
 #colorFilter{
     border: 1px solid gray;
@@ -185,9 +168,6 @@
     font-weight: lighter;
     font-size: small;
 }
-#colorFilter form input[type="checkbox"]{
-    margin-left: 20px;
-}
 #discountFilter{
     border: 1px solid gray;
     /* width: 250px; */
@@ -201,9 +181,6 @@
     font-family: sans-serif;
     font-weight: lighter;
     font-size: small;
-}
-#discountFilter form input[type="radio"]{
-    margin-left: 20px;
 }
 #parentDiv{
     /* border: 2px solid violet; */
@@ -250,11 +227,13 @@
 }
 #pages{
     margin-left: 250px;
+    border: 1px solid red;
+    /* width: 800px; */
     display: flex;
     align-items: center;
 }
 .pageAnchor{
-    margin-left: 400px;
+    margin-left: 100px;
 }
 .pageAnchor ul{
     color: white;
@@ -264,10 +243,6 @@
 .pageAnchor li{
     display: inline-block;
     font-weight: 700;
-}
-#pages button{
-    margin-left: 300px;
-    padding: 12px 20px 12px 20px;
 }
 .pageAnchor a{
     text-decoration: none;
@@ -281,72 +256,11 @@
     border: 1px solid gray;
     font-weight: bold;
 }
-#footer{
-    display:  flex;
-    font-weight: 100;
-    background-color: rgb(248, 246, 246);
+.prev{
+    margin-left: 300px;
+    padding: 12px 20px 12px 20px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-weight: bold;
 }
-.BuyPersonal{
-    width: 600px;
-    margin-left: 150px;
-}
-.personalPrice{
-    width: 600px;
-    margin-left: 70px;
-    
-}
-.personalcare{
-    display: flex;
-}
-.personalcare div:nth-child(2){
-    /* margin-left: 50px; */
-    line-height: 30px;
-    width: 100px;
-}
-.personalcare div:nth-child(1){
-    width: 350px;
-}
-.BuyPersonal h4{
-    text-align: center;
-}
-.BuyPersonal p{
-    text-align: justify;
-}
-#playStore{
-    display: flex;
-    margin-left: 150px;
-}
-#playStore a{
-    display: grid;
-    /* grid-template-rows: auto; */
-    line-height: 30px;
-    text-decoration: none;
-    color: black;
-}
-#playStore>div:nth-child(2){
-    margin-left: 40px;
-}
-#playStore>div:nth-child(3){
-    margin-left: 40px;
-}
-#playStore>div:nth-child(3) img{
-    width: 250px;
-}
-#playStore>div:nth-child(4){
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 200px;
-}
-#playStore>div:nth-child(4) img{
-    width: 250px;
-}
-#copyright{
-    display: flex;
-    margin-left: 150px;
-    justify-content: space-between;
-    margin-right: 150px;
-    font-family: sans-serif;
-    font-weight: lighter;
-}
-
-

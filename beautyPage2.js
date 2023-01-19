@@ -3,8 +3,6 @@
 const API = "https://63c642184ebaa80285423134.mockapi.io/products";
 
 let containerEl = document.getElementById("container");
-let previuosPage = document.querySelector(".next")
-let personalCareCount = document.getElementById("personalCare");
 let fetchedData = [];
 fetchData()
 async function fetchData(){
@@ -44,14 +42,10 @@ function display(data){
         gender.innerText = element.gender;
         price.innerText = `Rs. ${element.price}`;
         wishlistbtn.innerText = "WISHLIST"
-        personalCareCount.innerText = data.length;
         wishlistbtn.addEventListener("click",(e)=>{
             e.preventDefault();
             alert("wishlist working")
         })
-
-
-
         card.append(image,brand,gender,price);
         containerEl.append(card);
     });
