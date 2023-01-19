@@ -9,10 +9,9 @@
 }
 .navLinks{
     width: 500px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     margin-left: 30px;
    
 }
@@ -29,16 +28,17 @@
 }
 #searchForm{
     margin-left: 50px;
-    border: 1px solid rgb(13, 227, 13);
+    /* border: 1px solid rgb(13, 227, 13); */
 }
 #button{
     padding: 10px 10px;
     border-radius: 4px 0px 0px 4px;
    background-color: rgb(243, 240, 240);
+   border: none;
 
 }
 .rightCard{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-left: 50px;
     padding: 0px 20px 0px 0px;
     width: 200px;
@@ -55,7 +55,8 @@
 #Search{
     width: 300px;
     padding: 10px 10px;
-   background-color: rgb(243, 240, 240);
+    background-color: rgb(243, 240, 240);
+    border: none;
 }
 #personal{
     font-family: sans-serif;
@@ -72,7 +73,7 @@
     -webkit-transform: rotate(45deg);
 } 
 #headPart{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
 }
@@ -81,7 +82,7 @@
     font-family: sans-serif;
 }
 .bundleDiv{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-left: 170px;
     display: flex;
     justify-content: space-between;
@@ -96,18 +97,18 @@
     height: 40px;
 }
 #genderFilter{
-    border: 1px solid black;
+    border: 1px solid gray;
     border-left: none;
     border-bottom: none;
-    width: 250px;
+    /* width: 250px; */
     line-height: 25px;
 }
 #genderFilter form input[type="radio"]{
     padding-left: 30px;
 }
 #categoryFilter{
-    border: 1px solid black;
-    width: 250px;
+    border: 1px solid gray;
+    /* width: 250px; */
     line-height: 25px;
     border-left: none;
     border-bottom: none;
@@ -122,8 +123,8 @@
     font-size: small;
 }
 #brandFilter{
-    border: 1px solid black;
-    width: 250px;
+    border: 1px solid gray;
+    /* width: 250px; */
     line-height: 25px;
     border-left: none;
     border-bottom: none;
@@ -138,8 +139,8 @@
     font-size: small;
 }
 #priceFilter{
-    border: 1px solid black;
-    width: 250px;
+    border: 1px solid gray;
+    /* width: 250px; */
     line-height: 25px;
     border-left: none;
     border-bottom: none;
@@ -153,8 +154,8 @@
     font-size: small;
 }
 #colorFilter{
-    border: 1px solid black;
-    width: 250px;
+    border: 1px solid gray;
+    /* width: 250px; */
     line-height: 25px;
     border-left: none;
     border-bottom: none;
@@ -168,8 +169,8 @@
     font-size: small;
 }
 #discountFilter{
-    border: 1px solid black;
-    width: 250px;
+    border: 1px solid gray;
+    /* width: 250px; */
     line-height: 25px;
     border-left: none;
 }
@@ -181,4 +182,48 @@
     font-weight: lighter;
     font-size: small;
 }
+#parentDiv{
+    /* border: 2px solid violet; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+#container{
+    border: 1px solid gray;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: auto;
+    border-left: none;
+    border-right: none;
+    gap: 20px;
+}
+#container > div{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#container > div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#container > div img{
+    width: 100%;
+}
+#container > div p,h3,h4{
+    padding-left: 10px;
+}
+#container > div button{
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    
+}
+#container > div:hover button{
+    display: block;
+    color: blue;
+    position: relative;
+    z-index: 1;
+}
+
 
