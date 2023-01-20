@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="nav">
+        
+        <img src="./soft-jelly-7030_logo.png" alt="logo_error">
+
+       
+        <div class="navLinks">
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">HOME & LIVING</a>
+            <a href="./beauty.html">BEAUTY</a>
+            <a href="#">STUDIO</a>
+        </div>
+        <form id="searchForm">
+            <input type="submit" value="search" id="button">
+            <input placeholder="Search for products,brands and more" type="text" id="Search">
+        </form>
+        <div class="rightCard">
+            <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
+            
+            <div class="profile">
+                <a href="#">Profile</a>
+                <div class="profile-dropdown">
+                    <h5>WELCOME</h5>
+                    <a class="login" href="./signup.html">Login/Signup</a>
+                </div>
+            </div>
+            <div>
+                <a href="./wishlist.html">Wishlist</a>
+            </div>
+            <div>
+                <a href="">Bag</a>
+            </div>
+        </div>
+    </div>
+        <div id="login-container">
+           
+            <div id="login-card">
+            <img src="./images/login_coupon.png" alt="">
+                <h2>Login or Signup</h2>
+                <form id="login-form">
+                    <input id="userName" type="text" placeholder="User Name"><br>
+                    <p>By continuing, i agree to the <span> terms of use & Privacy policy</span></p>
+                    <input id="password" type="password" placeholder="Password"><br><br>
+                    <input id="submit" type="submit">
+                    <p class="getHelp">Have trouble logging in? <span>Get Help</span> </p>
+                </form>
+            </div>
+            <a href="./login.html">login</a>
+
+        </div>
+</body>
+<script>
+    let formEl=document.getElementById("login-form");
+    let userName=document.getElementById("userName");
+    let password=document.getElementById("password");
+
+
+    let formarr=JSON.parse(localStorage.getItem("login-data")) || [];
+    formEl.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let formData={
+            userName : userName.value,
+            password : password.value
+        }
+        formarr.push(formData)
+        localStorage.setItem("login-data",JSON.stringify(formarr))
+        
+    })
+
+    
+</script>
+</html>

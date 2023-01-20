@@ -227,7 +227,6 @@
 }
 #pages{
     margin-left: 250px;
-    border: 1px solid red;
     /* width: 800px; */
     display: flex;
     align-items: center;
@@ -264,3 +263,72 @@
     border: 1px solid gray;
     font-weight: bold;
 }
+#footer{
+    display:  flex;
+    font-weight: 100;
+    background-color: rgb(248, 246, 246);
+}
+.BuyPersonal{
+    width: 600px;
+    margin-left: 150px;
+}
+.personalPrice{
+    width: 600px;
+    margin-left: 70px;
+    
+}
+.personalcare{
+    display: flex;
+}
+.personalcare div:nth-child(2){
+    /* margin-left: 50px; */
+    line-height: 30px;
+    width: 100px;
+}
+.personalcare div:nth-child(1){
+    width: 350px;
+}
+.BuyPersonal h4{
+    text-align: center;
+}
+.BuyPersonal p{
+    text-align: justify;
+}
+#playStore{
+    display: flex;
+    margin-left: 150px;
+}
+#playStore a{
+    display: grid;
+    /* grid-template-rows: auto; */
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+}
+#playStore>div:nth-child(2){
+    margin-left: 40px;
+}
+#playStore>div:nth-child(3){
+    margin-left: 40px;
+}
+#playStore>div:nth-child(3) img{
+    width: 250px;
+}
+#playStore>div:nth-child(4){
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 200px;
+}
+#playStore>div:nth-child(4) img{
+    width: 250px;
+}
+#copyright{
+    display: flex;
+    margin-left: 150px;
+    justify-content: space-between;
+    margin-right: 150px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+

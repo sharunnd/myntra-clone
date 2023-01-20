@@ -30,9 +30,20 @@
         </form>
         <div class="rightCard">
             <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
-            <a href="#">Profile</a>
-            <a href="./wishlist.html">Wishlist</a>
-            <a href="">Bag</a>
+            
+            <div class="profile">
+                <a href="#">Profile</a>
+                <div class="profile-dropdown">
+                    <h5>WELCOME</h5>
+                    <a class="login" href="./signup.html">Login/Signup</a>
+                </div>
+            </div>
+            <div>
+                <a href="./wishlist.html">Wishlist</a>
+            </div>
+            <div>
+                <a href="">Bag</a>
+            </div>
         </div>
     </div>
     <h4 id="personal">Personal Care- <span id="personalCare">0</span> <span id="items-count">items</span></h4>
@@ -67,22 +78,22 @@
             </div>
             <div id="categoryFilter">
                 <h5>CATEGORIES</h5>
-                <form>
-                    <input type="checkbox" name="" id="" value="Shampoo">
+                <form id="category-form">
+                    <input type="checkbox" name="" id="cat" value="Shampoo">
                     <label for="">Shampoo</label><br>
-                    <input type="checkbox" name="" id="" value="Lipstick">
+                    <input type="checkbox" name="" class="cat" value="Lipstick">
                     <label for="">Lipstick</label><br>
-                    <input type="checkbox" name="" id="" value="Facewash">
+                    <input type="checkbox" name="" class="cat" value="Facewash">
                     <label for="">Facewash</label><br>
-                    <input type="checkbox" name="" id="" value="Perfume">
+                    <input type="checkbox" name="" class="cat" value="Perfume">
                     <label for="">Perfumes</label><br>
-                    <input type="checkbox" name="" id="" value="Hairoil">
+                    <input type="checkbox" name="" class="cat" value="Hairoil">
                     <label for="">Hair Oil</label><br>
-                    <input type="checkbox" name="" id="" value="Facecream">
+                    <input type="checkbox" name="" class="cat" value="Facecream">
                     <label for="">Facecream</label><br>
-                    <input type="checkbox" name="" id="" value="Body Oil">
+                    <input type="checkbox" name="" class="cat" value="Body Oil">
                     <label for="">Body Oil</label><br>
-                    <input type="checkbox" name="" id="" value="Makeup kit">
+                    <input type="checkbox" name="" class="cat" value="Makeup kit">
                     <label for="">Makeup kit</label><br>
                    </form>
             </div>
