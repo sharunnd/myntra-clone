@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty</title>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./beautyPage2.css">
+    <script src="https://kit.fontawesome.com/cf62c39274.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="beautyPage2.css">
 
 </head>
 <body>
     <div class="nav">
-        
+        <div id="ham-links-div">
+            <div>
+             <a href="#" id="ham"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="ham-links">
+              <a href="#">MEN</a><br>
+              <a href="#">WOMEN</a><br>
+              <a href="#">KIDS</a><br>
+              <a href="#">HOME & LIVING</a><br>
+              <a href="./beauty.html">BEAUTY</a><br>
+              <a href="#">STUDIO <span>NEW</span></a>
+            </div>
+        </div>
         <img src="./soft-jelly-7030_logo.png" alt="logo_error">
 
        
@@ -22,20 +33,36 @@
             <a href="#">KIDS</a>
             <a href="#">HOME & LIVING</a>
             <a href="./beauty.html">BEAUTY</a>
-            <a href="#">STUDIO</a>
+            <a href="#">STUDIO <span>NEW</span></a>
         </div>
         <form id="searchForm">
-            <input type="submit" value="search" id="button">
+            <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input placeholder="Search for products,brands and more" type="text" id="Search">
         </form>
         <div class="rightCard">
             <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
-            <a href="#">Profile</a>
-            <a href="./wishlist.html">Wishlist</a>
-            <a href="">Bag</a>
+            
+            <div class="profile">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                <a href="#">Profile</a>
+                </div>
+                <div class="profile-dropdown">
+                    <h5>WELCOME</h5>
+                    <a class="login" href="./signup.html">Login/Signup</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <a href="./wishlist.html">Wishlist</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <a href="">Bag</a>
+            </div>
         </div>
     </div>
-    <h4 id="personal">Personal Care- <span id="personalCare">0</span></h4>
+    <h4 id="personal">Personal Care- <span id="personalCare">0</span> <span id="items-count">items</span></h4>
     <div id="headPart">
         <h4>FILTERS</h4>
         <div class="bundleDiv">
@@ -49,6 +76,9 @@
             <option value="lowHigh">Sort by:Price: Low To High</option>
         </select>
     </div>
+    <!-- <i class="fa-regular fa-heart"></i> -->
+
+    <!-- page content -->
     <div id="parentDiv">
         <div id="filters">
             <div id="genderFilter">
@@ -65,28 +95,28 @@
                    </form>
             </div>
             <div id="categoryFilter">
-                <h5>CATEGORIES</h5>
-                <form>
-                    <input type="checkbox" name="" id="" value="Shampoo">
+                <h5>CATEGORIES <span><i class="fas fa-search"></i></span></h5>
+                <form id="category-form">
+                    <input type="checkbox" name="" id="cat" value="Shampoo">
                     <label for="">Shampoo</label><br>
-                    <input type="checkbox" name="" id="" value="Lipstick">
+                    <input type="checkbox" name="" class="cat" value="Lipstick">
                     <label for="">Lipstick</label><br>
-                    <input type="checkbox" name="" id="" value="Facewash">
+                    <input type="checkbox" name="" class="cat" value="Facewash">
                     <label for="">Facewash</label><br>
-                    <input type="checkbox" name="" id="" value="Perfume">
+                    <input type="checkbox" name="" class="cat" value="Perfume">
                     <label for="">Perfumes</label><br>
-                    <input type="checkbox" name="" id="" value="Hairoil">
+                    <input type="checkbox" name="" class="cat" value="Hairoil">
                     <label for="">Hair Oil</label><br>
-                    <input type="checkbox" name="" id="" value="Facecream">
+                    <input type="checkbox" name="" class="cat" value="Facecream">
                     <label for="">Facecream</label><br>
-                    <input type="checkbox" name="" id="" value="Body Oil">
+                    <input type="checkbox" name="" class="cat" value="Body Oil">
                     <label for="">Body Oil</label><br>
-                    <input type="checkbox" name="" id="" value="Makeup kit">
+                    <input type="checkbox" name="" class="cat" value="Makeup kit">
                     <label for="">Makeup kit</label><br>
                    </form>
             </div>
             <div id="brandFilter">
-                <h5>BRAND</h5>
+                <h5>BRAND<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="Deve Herbes">
                     <label for="">Deve Herbes</label><br>
@@ -107,20 +137,20 @@
                    </form>
             </div>
             <div id="priceFilter">
-                <h5>PRICE</h5>
+                <h5>PRICE<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="Rs. 34 to Rs. 12501">
-                    <label for="">Rs. 34 to Rs. 12501</label><br>
+                    <label for="">Rs.34 to Rs.125</label><br>
                     <input type="checkbox" name="" id="" value="Rs. 12501 to Rs. 24968">
-                    <label for="">Rs. 12501 to Rs. 24968</label><br>
+                    <label for="">Rs.125 to Rs.249</label><br>
                     <input type="checkbox" name="" id="" value="Rs. 24968 to Rs. 37435">
-                    <label for="">Rs. 24968 to Rs. 37435</label><br>
+                    <label for="">Rs.249 to Rs.374</label><br>
                     <input type="checkbox" name="" id="" value="Rs. 37435 to Rs. 49902">
-                    <label for="">Rs. 37435 to Rs. 49902</label><br>
+                    <label for="">Rs.374 to Rs.999</label><br>
                    </form>
             </div>
             <div id="colorFilter">
-                <h5>COLOR</h5>
+                <h5>COLOR<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="White">
                     <label for="">white</label><br>
@@ -165,8 +195,8 @@
         <div id="container"></div>
     </div>
     <div id="pages">
-        <p>Page <span>2</span>of 2</p>
-        <button onclick="history.back()" class="prev">< Previuos</button>
+        <p>Page <span>1</span>of 2</p>
+        <button onclick="history.back()" class="prev">Previous  ></button>
         <div class="pageAnchor">
             <ul>
                 <li>
@@ -179,6 +209,7 @@
         </div>
         <button onclick="history.forward()" class="next">Next  ></button>
     </div>
+    <!-- footer -->
     <div id="footer">
         <div class="BuyPersonal">
             <h4>BUY PERSONAL CARE</h3>
@@ -247,5 +278,5 @@
         <p>&#169; 2023 www.onlinehandel.com. All rights Reserved</p>
     </div>
 </body>
-<script src="./beautyPage2.js"></script>
+<script src="./beauty.js"></script>
 </html>

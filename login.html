@@ -10,7 +10,20 @@
 
 <body>
     <div class="nav">
-        
+        <div id="ham-links-div">
+            <div>
+             <a href="#" id="ham"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="ham-links">
+              <a href="#">MEN</a><br>
+              <a href="#">WOMEN</a><br>
+              <a href="#">KIDS</a><br>
+              <a href="#">HOME & LIVING</a><br>
+              <a href="./beauty.html">BEAUTY</a><br>
+              <a href="#">STUDIO <span>NEW</span></a>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/cf62c39274.js" crossorigin="anonymous"></script>
         <img src="./soft-jelly-7030_logo.png" alt="logo_error">
 
        
@@ -30,16 +43,22 @@
             <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
             
             <div class="profile">
-                <a href="#">Profile</a>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="#">Profile</a>
+                </div>
                 <div class="profile-dropdown">
                     <h5>WELCOME</h5>
-                    <a class="login" href="./login.html">Login/Signup</a>
+                    <p>To access account and manage orders</p>
+                    <a class="login" href="./signup.html">LOGIN/SIGNUP</a>
                 </div>
             </div>
             <div>
+                <i class="fa-regular fa-heart"></i>
                 <a href="./wishlist.html">Wishlist</a>
             </div>
             <div>
+                <i class="fa-solid fa-bag-shopping"></i>
                 <a href="">Bag</a>
             </div>
         </div>
@@ -76,13 +95,12 @@
         loginData.push(inpData)
         formarr.forEach(element => {
             if(inpData.userName==element.userName && inpData.password==element.password){
-        alert("login successful")
+        alert("Logged in successfully")
+        location.replace("http://127.0.0.1:5500/beauty.html")
     }else{
-        alert("sorry")
+        alert("Incorrect username or password")
     }
-        })
-       
-        
+        })  
     })
 
     
