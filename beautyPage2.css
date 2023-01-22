@@ -7,6 +7,45 @@
     align-items: center;
 
 }
+#ham{
+    display: none;
+    background-color: white;
+    border: none;
+    color: black;
+}
+#ham-links-div{
+    position: relative;
+    display: inline-block;
+}
+  
+.ham-links{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ham-links a{
+    font-family: sans-serif;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+}
+.ham-links span{
+    color: red;
+    font-size: 8px;
+    position: relative;
+    top: 50%;
+} 
+#ham-links-div:hover .ham-links{
+    display: block;
+}
 .navLinks{
     width: 500px;
     /* border: 1px solid blue; */
@@ -26,6 +65,17 @@
     width: 150px;
     margin-left: 50px;
 }
+.navLinks span{
+    color: red;
+    font-size: 10px;
+    position: relative;
+    bottom: 50%;
+}
+#ham{
+    display: none;
+    background-color: white;
+    border: none;
+}
 #searchForm{
     margin-left: 50px;
     /* border: 1px solid rgb(13, 227, 13); */
@@ -42,7 +92,7 @@
     margin-left: 50px;
     padding: 0px 20px 0px 0px;
     width: 200px;
-   
+   display: flex;
 }
 .rightCard a{
     padding-right: 20px;
@@ -57,6 +107,44 @@
     padding: 10px 10px;
     background-color: rgb(243, 240, 240);
     border: none;
+}
+.profile{
+    position: relative;
+    display: inline-block;
+      
+}
+.profile-dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 100px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+    width: 260px;
+    right: -80px;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+.profile-dropdown a{
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+.profile-dropdown p{
+   font-size: smaller;
+    font-weight: lighter;
+    line-height: 0px;
+}
+.profile:hover .profile-dropdown {
+    display: block;
+}
+.fa-regular{
+    margin-left: 20%;
+} 
+.fa-solid{
+    margin-left: 10%;
 }
 #personal{
     font-family: sans-serif;
@@ -182,6 +270,9 @@
     font-weight: lighter;
     font-size: small;
 }
+#filters{
+    width: 100%;
+}
 #parentDiv{
     /* border: 2px solid violet; */
     width: 100%;
@@ -193,7 +284,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin: auto;
     border-left: none;
     border-right: none;
     gap: 20px;
@@ -202,6 +292,8 @@
     /* border: 1px solid red; */
     margin-top: 20px;
     margin-left: 20px;
+    line-height: 5px;
+    font-family: sans-serif;
 }
 #container > div:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -217,13 +309,25 @@
     width: 90%;
     margin: auto;
     padding: 5px;
-    
+    text-decoration: none;
+    /* margin-top: 5px; */
+
+}
+#container > div:hover h3{
+    display: none;
 }
 #container > div:hover button{
     display: block;
-    color: blue;
-    position: relative;
+    color: black;
+    /* position: absolute; */
     z-index: 1;
+    background-color: white;
+    border: .5px solid gray;
+    font-size: smaller;
+}
+#container > div button:focus{
+    color: white;
+    background-color: rgb(49, 47, 47);
 }
 #pages{
     margin-left: 250px;
@@ -333,23 +437,14 @@
 
 
 @media screen and (min-width:861px) and (max-width:1140px){
-    .nav{
-        display: flex;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        background-color: white;
+    .nav{  
         height: auto;
-    
     }
     #ham{
         display: block;
     }
     .navLinks{
-        display: none;
-       
-       
+        display: none;    
     }
     #searchForm{
         margin-left: auto;
@@ -359,17 +454,17 @@
         padding:auto;
     }
     .rightCard{
-        margin-left: auto;
-        padding:auto;
-        width: auto;       
+        margin-left: auto;         
     }
-    #sort{
-        
+    #sort{   
         margin-left:auto;
        padding: auto;
     }
     .bundleDiv{
         margin-left: auto;
+    }
+    #filters{
+        width: auto;
     }
     #container{
         grid-template-columns: repeat(3,1fr);
@@ -377,7 +472,17 @@
     #pages{
         margin-left: auto;
     }
+    #pages button{
+        margin-left: auto;
+    }
+    .pageAnchor{
+        margin-left:auto;
+    }
     .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .prev{
         margin-left: auto;
         padding: auto;
     }
@@ -407,15 +512,21 @@
        
     }
 }
+@media screen and (min-width:860px) and (max-width:1240px){
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    #searchForm{
+        width: auto;
+    }
+    #sort{
+        margin-left: auto;
+    }
+}
 /* screen 2 */
 @media screen and (min-width:550px) and (max-width:860px){
     .nav{
-        display: flex;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        background-color: white;
         height: auto;
     
     }
@@ -427,9 +538,7 @@
         display: block;
     }
     .navLinks{
-        display: none;
-       
-       
+        display: none;  
     }
     #searchForm{
         margin-left: auto;
@@ -440,11 +549,13 @@
     }
     .rightCard{
         margin-left: auto;
-        padding:auto;
-        width: auto;       
+          
     }
     .bundleDiv{
         display: none;
+    }
+    #filters{
+        width: auto;
     }
     #sort{
         
@@ -457,7 +568,17 @@
     #pages{
         margin-left: auto;
     }
+    #pages button{
+        margin-left: auto;
+    }
+    .pageAnchor{
+        margin-left:auto;
+    }
     .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .prev{
         margin-left: auto;
         padding: auto;
     }
@@ -518,14 +639,17 @@
     #Search{
         width: auto;
         padding:auto;
+        display: none;
     }
     .rightCard{
         margin-left: auto;
-        padding:auto;
-        width: auto;       
+        
     }
     .bundleDiv{
         display: none;
+    }
+    #filters{
+        width: auto;
     }
     #sort{
         
@@ -538,7 +662,17 @@
     #pages{
         margin-left: auto;
     }
+    #pages button{
+        margin-left: auto;
+    }
+    .pageAnchor{
+        margin-left:auto;
+    }
     .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .prev{
         margin-left: auto;
         padding: auto;
     }

@@ -10,6 +10,53 @@
     height: 80px;
 
 }
+#ham{
+    display: none;
+    background-color: white;
+    border: none;
+    color: black;
+}
+.navLinks{
+    width: 500px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+   
+}
+#ham-links-div{
+    position: relative;
+    display: inline-block;
+}
+  
+.ham-links{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ham-links a{
+    font-family: sans-serif;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+}
+.ham-links span{
+    color: red;
+    font-size: 8px;
+    position: relative;
+    top: 50%;
+} 
+#ham-links-div:hover .ham-links{
+    display: block;
+}
 .navLinks{
     width: 500px;
     /* border: 1px solid blue; */
@@ -148,4 +195,117 @@ body{
     color: black;
     margin-left: 20px;
     margin-top: 15px;
+}
+
+
+@media screen and (min-width:861px) and (max-width:1140px){
+    .nav{  
+        height: auto;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;   
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        /* width: auto; */
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+    }
+   
+}
+@media screen and (min-width:860px) and (max-width:1240px){
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+}
+/* screen 2 */
+@media screen and (min-width:550px) and (max-width:860px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 120px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: 45px;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        /* padding:auto; */
+    }
+    
+    
+}
+
+/* small screen */
+@media screen and (min-width:100px) and (max-width:549px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 90px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: 45px;
+        padding:auto;
+        display: none;
+    }
+    .rightCard{
+        margin-left: auto;
+        /* padding:auto; */
+    }
+    #login-container{
+        width: auto;
+    }
+   
 }

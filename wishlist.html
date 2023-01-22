@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wishlist</title>
+    <script src="https://kit.fontawesome.com/cf62c39274.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="wishlist.css">
 </head>
 <body>
     <div class="nav">
-        
+        <div id="ham-links-div">
+            <div>
+             <a href="#" id="ham"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="ham-links">
+              <a href="#">MEN</a><br>
+              <a href="#">WOMEN</a><br>
+              <a href="#">KIDS</a><br>
+              <a href="#">HOME & LIVING</a><br>
+              <a href="./beauty.html">BEAUTY</a><br>
+              <a href="#">STUDIO <span>NEW</span></a>
+            </div>
+        </div>
         <img src="./soft-jelly-7030_logo.png" alt="logo_error">
 
        
@@ -19,33 +32,105 @@
             <a href="#">KIDS</a>
             <a href="#">HOME & LIVING</a>
             <a href="./beauty.html">BEAUTY</a>
-            <a href="#">STUDIO</a>
+            <a href="#">STUDIO <span>NEW</span></a>
         </div>
         <form id="searchForm">
-            <input type="submit" value="search" id="button">
+            <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input placeholder="Search for products,brands and more" type="text" id="Search">
         </form>
         <div class="rightCard">
             <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
             
             <div class="profile">
-                <a href="#">Profile</a>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="#">Profile</a>
+                </div>
                 <div class="profile-dropdown">
                     <h5>WELCOME</h5>
-                    <a class="login" href="./signup.html">Login/Signup</a>
+                    <p>To access account and manage orders</p>
+                    <a class="login" href="./signup.html">LOGIN/SIGNUP</a>
                 </div>
             </div>
             <div>
+                <i class="fa-regular fa-heart"></i>
                 <a href="./wishlist.html">Wishlist</a>
             </div>
             <div>
+                <i class="fa-solid fa-bag-shopping"></i>
                 <a href="">Bag</a>
             </div>
         </div>
     </div>
     <p class="mywishlist-heading">My Wishlist <span class="wishlist-items">0</span><span> Items</span></p>
     <div id="container"></div>
+    <div id="footer">
+        <div class="BuyPersonal">
+            <h4>BUY PERSONAL CARE</h3>
+            <h5>PERSONAL CARE PRODUCTS AT MYNTRA: FOR EVERY NEED FROM HEAD TO TOE</h4>
+            <p>You would have experienced the best of footwear, accessories and clothing at Myntra. It is now time to check out our beauty and personal care solutions for every need from head to toe. Whether it is about cleansing, moisturising, adding fragrance or highlighting your features with makeup, you will find the perfect product tailor-made for you, right here at our online store. We bring you the best price personal care options so that you can look good without burning a hole in your pocket.</p>
+            <h4>BUY PERSONAL CARE PRODUCTS WITH CONVENIENCE</h4>
+            <p>You can buy personal care products right from the comfort of your home by shopping online at Myntra. Our user-friendly interface makes shopping an enjoyable experience. Furthermore, you can avail the best of personal care brands and varieties under one roof. This would save you the time and effort of having to look for different kinds of products at different places.</p>
 
+        </div>
+        <div class="personalPrice">
+            <h4>PERSONAL CARE PRICE LIST</h4>
+           <div class="personalcare">
+            <div>
+                <p>Personal Care</p>
+                <p>Denver Men Black Code Eau de Parfum 60ml</p>
+                <p>VILLAIN Gold Edition Men Revolver Eau De Parfum 100ml</p>
+                <p>Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid + Vitamin E - 247 g</p>
+                <p>Minimalist 10% Niacinamide Face Serum with Zinc - 30 ml</p>
+                <p>Park Avenue Men Set Of 4 Good Morning Premium Soap with Shea Butter & Tea Tree - 125g Each</p>
+                <p>Plum 15% Vitamin C Face Serum with Mandarin - 30ml</p>
+                <p>Lakme Face It Matte Finish Compact - Natural Shell</p>
+            </div>
+            <div>
+                <p>PRICE (RS)</p>
+                <p>Rs. 191</p>
+                <p>Rs. 1004</p>
+                <p>Rs. 308</p>
+                <p>Rs. 191</p>
+                <p>Rs. 308</p>
+                <p>Rs. 191</p>
+                <p>Rs. 308</p>
+            </div>
+           </div>
+            <p>Data last updated on 19/01/2023</p>
+        </div>
+    </div>
+    <div id="playStore">
+        <div>
+            <h5>ONLINE SHOPPING</h5>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="./beauty.html">Beauty</a>
+        </div>
+        <div>
+            <h5>CUSTOMER POLICIES</h5>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+            <p>T&C</p>
+            <p>Terms of Use</p>
+            <p>Track Orders</p>
+            <p>Shipping</p>
+            <p>Cancellation</p>
+        </div>
+        <div>
+            <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+            <img src="./images/social.png" alt="">
+        </div>
+        <div>
+            <img src="./images/original.png" alt="">
+        </div>
+    </div>
+    <div id="copyright">
+        <p>In case of any concern, <span>Contact Us</span></p>
+        <p>&#169; 2023 www.onlinehandel.com. All rights Reserved</p>
+    </div>
 </body>
 <script src="./wishlist.js"></script>
 </html>
