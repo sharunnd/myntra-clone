@@ -332,3 +332,242 @@
 }
 
 
+@media screen and (min-width:861px) and (max-width:1140px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    .bundleDiv{
+        margin-left: auto;
+    }
+    #container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
+/* screen 2 */
+@media screen and (min-width:550px) and (max-width:860px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 120px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    .bundleDiv{
+        display: none;
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
+
+/* small screen */
+@media screen and (min-width:100px) and (max-width:549px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 90px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    .bundleDiv{
+        display: none;
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
+
+
+

@@ -11,6 +11,10 @@
     height: 80px;
 
 }
+#ham{
+    display: none;
+    background-color: white;
+}
 .navLinks{
     width: 500px;
     /* border: 1px solid blue; */
@@ -25,6 +29,12 @@
     font-size: small;
     font-weight: bold;
     text-decoration: none;
+}
+.navLinks span{
+    color: red;
+    font-size: 10px;
+    position: relative;
+    bottom: 50%;
 }
 .nav img{
     width: 150px;
@@ -87,7 +97,13 @@
   }
 .profile:hover .profile-dropdown {
     display: block;
+}
+.fa-regular{
+    margin-left: 20%;
 } 
+.fa-solid{
+    margin-left: 10%;
+}
 #Search{
     width: 300px;
     padding: 10px 10px;
@@ -138,7 +154,7 @@
 #sort{
     /* border: 1px solid red; */
     margin-left: 650px;
-    height: 40px;
+    padding: 10px 10px;
 }
 #genderFilter{
     border: 1px solid gray;
@@ -157,8 +173,13 @@
     border-left: none;
     border-bottom: none;
 }
+#categoryFilter h5 span{
+    margin-left: 65px;
+}
 #categoryFilter h5{
     font-family: sans-serif;
+    margin-left: 20px;
+
 
 }
 #categoryFilter form{
@@ -178,7 +199,10 @@
 }
 #brandFilter H5{
     font-family: sans-serif;
-
+    margin-left: 20px;
+}
+#brandFilter H5 span{
+    margin-left: 110px;
 }
 #brandFilter form{
     font-family: sans-serif;
@@ -197,6 +221,10 @@
 }
 #priceFilter H5{
     font-family: sans-serif;
+    margin-left: 20px;
+}
+#priceFilter H5 span{
+    margin-left: 115px;
 }
 #priceFilter FORM{
     font-family: sans-serif;
@@ -215,6 +243,10 @@
 }
 #colorFilter H5{
     font-family: sans-serif;
+    margin-left: 20px;
+}
+#colorFilter H5 span{
+    margin-left: 110px;
 }
 #colorFilter FORM{
     font-family: sans-serif;
@@ -252,7 +284,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin: auto;
     border-left: none;
     border-right: none;
     gap: 20px;
@@ -278,13 +309,25 @@
     width: 90%;
     margin: auto;
     padding: 5px;
-    
+    text-decoration: none;
+    /* margin-top: 5px; */
+
+}
+#container > div:hover h3{
+    display: none;
 }
 #container > div:hover button{
     display: block;
-    color: blue;
-    position: relative;
+    color: black;
+    /* position: absolute; */
     z-index: 1;
+    background-color: white;
+    border: .5px solid gray;
+    font-size: smaller;
+}
+#container > div button:focus{
+    color: white;
+    background-color: rgb(49, 47, 47);
 }
 #pages{
     margin-left: 250px;
@@ -368,15 +411,15 @@
     margin-left: 40px;
 }
 #playStore>div:nth-child(3) img{
-    width: 250px;
+    width: 90%;
 }
 #playStore>div:nth-child(4){
     margin-left: 40px;
     margin-top: 20px;
-    width: 200px;
+    width: 20%;
 }
 #playStore>div:nth-child(4) img{
-    width: 250px;
+    width: 100%;
 }
 #copyright{
     display: flex;
@@ -387,4 +430,240 @@
     font-weight: lighter;
 }
 
+@media screen and (min-width:861px) and (max-width:1140px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    .bundleDiv{
+        margin-left: auto;
+    }
+    #container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
+/* screen 2 */
+@media screen and (min-width:550px) and (max-width:860px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 120px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    .bundleDiv{
+        display: none;
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
+
+/* small screen */
+@media screen and (min-width:100px) and (max-width:549px){
+    .nav{
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: auto;
+    
+    }
+    .nav img{
+        margin-left: auto;
+        width: 90px;
+    }
+    #ham{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+       
+       
+    }
+    #searchForm{
+        margin-left: auto;
+    }
+    #Search{
+        width: auto;
+        padding:auto;
+    }
+    .rightCard{
+        margin-left: auto;
+        padding:auto;
+        width: auto;       
+    }
+    .bundleDiv{
+        display: none;
+    }
+    #sort{
+        
+        margin-left:auto;
+       padding: auto;
+    }
+    #container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #pages{
+        margin-left: auto;
+    }
+    .next{
+        margin-left: auto;
+        padding: auto;
+    }
+    .BuyPersonal{
+        margin-left:auto;
+    }
+    #playStore{
+        
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(2){
+        margin-left: auto;
+    }
+    #playStore>div:nth-child(3){
+        margin-left: auto;
+    }
+   
+    #playStore>div:nth-child(4){
+        margin-left: auto;
+    }
+    
+    #copyright{
+       
+        margin-left:auto;
+       
+        margin-right: auto;
+       
+    }
+}
 
