@@ -65,6 +65,29 @@
     font-weight: bold;
     text-decoration: none;
 }
+.navLinks a{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navLinks a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #f610d3;
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .navLinks a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .navLinks span{
     color: red;
     font-size: 10px;
@@ -109,6 +132,29 @@
 .rightCard img{
     width: 35px;
 }
+.rightCard a{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .rightCard a:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #f610d3;
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .rightCard a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .profile{
     position: relative;
     display: inline-block;

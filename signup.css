@@ -72,6 +72,29 @@
     font-weight: bold;
     text-decoration: none;
 }
+.navLinks a{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navLinks a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #f610d3;
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .navLinks a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .nav img{
     width: 150px;
     margin-left: 50px;
@@ -110,6 +133,29 @@
 .rightCard img{
     width: 35px;
 }
+.rightCard a{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .rightCard a:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #f610d3;
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .rightCard a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .profile{
     position: relative;
     display: inline-block;
@@ -121,19 +167,33 @@
     background-color: white;
     /* min-width: 100px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 5;
-    width: 200%;
-    /* right: 4; */
+    z-index: 0;
+    width: 260px;
+    right: -80px;
+    padding-left: 20px;
+    font-family: sans-serif;
 }
-.profile-dropdown a {
+.profile-dropdown a{
     color: red;
-    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
-.profile:hover .profile-dropdown {
-    display: block;
+.profile-dropdown p{
+   font-size: smaller;
+    font-weight: lighter;
+    line-height: 0px;
+}
+.profile:hover .profile-dropdown{
+    /* display: block; */
+}
+.fa-regular{
+    margin-left: 20%;
 } 
+.fa-solid{
+    margin-left: 10%;
+}
 #Search{
     width: 300px;
     padding: 10px 10px;
