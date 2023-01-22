@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty</title>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/cf62c39274.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="beauty.css">
 
 </head>
 <body>
     <div class="nav">
-        
+        <button id="ham"><i class="fas fa-bars"></i></button>
         <img src="./soft-jelly-7030_logo.png" alt="logo_error">
 
        
@@ -22,26 +21,31 @@
             <a href="#">KIDS</a>
             <a href="#">HOME & LIVING</a>
             <a href="./beauty.html">BEAUTY</a>
-            <a href="#">STUDIO</a>
+            <a href="#">STUDIO <span>NEW</span></a>
         </div>
         <form id="searchForm">
-            <input type="submit" value="search" id="button">
+            <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input placeholder="Search for products,brands and more" type="text" id="Search">
         </form>
         <div class="rightCard">
             <!-- <a href=""><i class='fa fa-shopping-bag'></i></i></a> -->
             
             <div class="profile">
+                <div>
+                    <i class="fa-regular fa-user"></i>
                 <a href="#">Profile</a>
+                </div>
                 <div class="profile-dropdown">
                     <h5>WELCOME</h5>
                     <a class="login" href="./signup.html">Login/Signup</a>
                 </div>
             </div>
             <div>
+                <i class="fa-regular fa-heart"></i>
                 <a href="./wishlist.html">Wishlist</a>
             </div>
             <div>
+                <i class="fa-solid fa-bag-shopping"></i>
                 <a href="">Bag</a>
             </div>
         </div>
@@ -60,6 +64,8 @@
             <option value="lowHigh">Sort by:Price: Low To High</option>
         </select>
     </div>
+    <!-- <i class="fa-regular fa-heart"></i> -->
+
     <!-- page content -->
     <div id="parentDiv">
         <div id="filters">
@@ -77,7 +83,7 @@
                    </form>
             </div>
             <div id="categoryFilter">
-                <h5>CATEGORIES</h5>
+                <h5>CATEGORIES <span><i class="fas fa-search"></i></span></h5>
                 <form id="category-form">
                     <input type="checkbox" name="" id="cat" value="Shampoo">
                     <label for="">Shampoo</label><br>
@@ -98,7 +104,7 @@
                    </form>
             </div>
             <div id="brandFilter">
-                <h5>BRAND</h5>
+                <h5>BRAND<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="Deve Herbes">
                     <label for="">Deve Herbes</label><br>
@@ -119,7 +125,7 @@
                    </form>
             </div>
             <div id="priceFilter">
-                <h5>PRICE</h5>
+                <h5>PRICE<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="Rs. 34 to Rs. 12501">
                     <label for="">Rs. 34 to Rs. 12501</label><br>
@@ -132,7 +138,7 @@
                    </form>
             </div>
             <div id="colorFilter">
-                <h5>COLOR</h5>
+                <h5>COLOR<span><i class="fas fa-search"></i></span></h5>
                 <form>
                     <input type="checkbox" name="" id="" value="White">
                     <label for="">white</label><br>

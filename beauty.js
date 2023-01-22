@@ -3,6 +3,7 @@
 const API = "https://63c642184ebaa80285423134.mockapi.io/products";
 const sortAPI = "https://63c642184ebaa80285423134.mockapi.io/products?orderBy=price&order=desc";
 const categoryAPI = "https://63c642184ebaa80285423134.mockapi.io/products?filter=shampoo";
+let wishlistData = JSON.parse(localStorage.getItem("wishlist-data")) || [];
 
 let containerEl = document.getElementById("container");
 let previuosPage = document.querySelector(".next")
@@ -13,7 +14,7 @@ let sortEl = document.getElementById("sort")
 let fetchedData = [];
 fetchData()
 
-searchFormEl.addEventListener("submit",(e)=>{
+searchFormEl.addEventListener("click",(e)=>{
     e.preventDefault();
     let searchInp = searchFormEl.Search.value;
     let filtered = fetchedData.filter(element=>{
@@ -109,17 +110,6 @@ categoryInp.addEventListener("change",(e)=>{
     }
 });
 
-// function displayCat(data){
-//     data=data.filter(element=>{
-//         if(categoryInp.checked==element.category){
-//             return true;
-//         }else{
-//             display(data)
-//         }
-//     })
-// }
-
-
 
 
 function display(data){
@@ -144,12 +134,14 @@ function display(data){
         personalCareCount.innerText = data.length;
         wishlistbtn.addEventListener("click",(e)=>{
             e.preventDefault();
-            alert("wishlist working")
+            wishlistbtn.innerText = "WISHLISTED"
+            wishlistData.push(element)
+            localStorage.setItem("wishlist-data",JSON.stringify(wishlistData))
         })
 
 
 
-        card.append(image,brand,gender,price);
+        card.append(image,brand,wishlistbtn,gender,price);
         containerEl.append(card);
     });
 }
