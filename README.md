@@ -1,7 +1,7 @@
 # Myntra Clone
 Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India.
 
-## To visit my website please click on this link :- https://cheery-melba-acacca.netlify.app/
+## To visit my website please [click here](https://cheery-melba-acacca.netlify.app/)
 
 ## Tech stacks used :
 * HTML
